@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Default Vue</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css" media="all">
+	<script data-main="js/app" src="js/libs/require.js"></script>
+	<!--<script type="text/javascript" src="js/libs/vue.js"></script>-->
+
+
+</head>
+<body>
+
+		<div class="container" id="player"  >
+	        <div class="page-header">
+			  <h1>{{playerTitle}}</small></h1>
+			</div>
+
+			<div class="panel panel-default">
+				  <div class="panel-body">
+				  		<a href="javascript:void(0);" class="glyphicon glyphicon-play-circle pull-left"></a>
+						<a href="javascript:void(0);" class="glyphicon glyphicon-stop  pull-left"></a>
+
+				   		<span class="pull-left">{{playingTitle}}: <strong>{{selectMusic}}</strong></span>
+
+				   		<a href="javascript:void(0);" class="glyphicon glyphicon-random  pull-right"></a>
+				   		<a href="javascript:void(0);" class="glyphicon glyphicon-heart  pull-right"></a>
+				  </div>
+			</div>
+
+			<div id="playlist" class="panel panel-default">
+				  <div class="panel-body">
+					  	<ul>
+					  		 <li
+								v-repeat="musics.item"
+							 >
+								<a href="">{{nome}}</a>
+							</li>
+					  	<ul>
+				  </div>
+			</div>	
+
+		</div>	
+
+
+
+
+
+
+
+
+</body>
+</html>
